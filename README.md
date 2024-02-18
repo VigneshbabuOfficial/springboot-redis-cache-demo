@@ -3,9 +3,18 @@
 ## what is cache mechanism ? why it's using ?
 > The cache mechanism stores frequently accessed data in a temporary storage layer between the server and the database. When a client requests data, the server first checks the cache for a matching entry. If found, the data is returned directly from the cache, reducing the need for repeated queries to the database and improving system performance
 
+
+> JPA itself providing the 2 levels of Cache. <br/>
+> JPA First level Cache - will cache the particular table / entity query execution within the same Transaction and that cache wont be avail in next Transaction or client Request. @Transactional annotation is used to mark the method to use same Transaction. Otherwise it'll create new Transaction for all the query execution. <br/>
+> JPA Second level Cache - will be used to cache the particular entity so @Cacheable annotation is used at Entity level. So whenever a client requesting the same resource query execution will be cached after the initial one and this will be stored in Persistent Context memory. <br/>
+> But Redis Cache will store / cache the entire response for a Client request. <br/>
+> REF : https://www.youtube.com/watch?v=AvW94hRknmA&list=PLaLGeHpx4nQmhr6TtLtcSk_rQ4j0q6Dvi&index=43    ||||||    https://www.youtube.com/watch?v=oHVs4gK0MtU
+
 ## why Redis Cache ?
 
+
 ## Limitations of Redis Cache
+
 
 ## Redis Interview Questions
 
