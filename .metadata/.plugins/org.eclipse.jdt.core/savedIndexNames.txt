@@ -1,0 +1,5 @@
+INDEX VERSION 1.132+D:\learnings\backend\java\spring_boot\cache\springboot-redis-cache-demo\.metadata\.plugins\org.eclipse.jdt.core
+4093992016.index
+1865797976.index
+3814205142.index
+3897293988.index
