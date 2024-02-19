@@ -8,7 +8,7 @@
 > JPA First level Cache - will cache the particular table / entity query execution within the same Transaction and that cache wont be avail in next Transaction or client Request. @Transactional annotation is used to mark the method to use same Transaction. Otherwise it'll create new Transaction for all the query execution. <br/>
 > JPA Second level Cache - will be used to cache the particular entity so @Cacheable annotation is used at Entity level. So whenever a client requesting the same resource query execution will be cached after the initial one and this will be stored in Persistent Context memory. <br/>
 > But Redis Cache will store / cache the entire response for a Client request. <br/>
-> REF : https://www.youtube.com/watch?v=AvW94hRknmA&list=PLaLGeHpx4nQmhr6TtLtcSk_rQ4j0q6Dvi&index=43    ||||||    https://www.youtube.com/watch?v=oHVs4gK0MtU
+> REF : </br> https://www.youtube.com/watch?v=AvW94hRknmA&list=PLaLGeHpx4nQmhr6TtLtcSk_rQ4j0q6Dvi&index=43  <br/>  https://www.youtube.com/watch?v=oHVs4gK0MtU
 
 ## why Redis Cache ?
 
