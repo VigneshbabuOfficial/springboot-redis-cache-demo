@@ -268,3 +268,7 @@ Copy the ID and hit the endpoint GET http://localhost:8080/product/152 twice. We
 Likewise try PUT and DELETE requests also.
 ```
 
+## HOW TO START THE REDIS CACHE SERVER ?
+> open ubuntu CLI -> enter this command `sudo service redis-server start`. enter the password followed by the command. <br/>
+then enter this command -> `redis-cli` -> `ping`  -> PONG will be displayed.
+
