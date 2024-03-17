@@ -272,3 +272,5 @@ Likewise try PUT and DELETE requests also.
 > open ubuntu CLI -> enter this command `sudo service redis-server start`. enter the password followed by the command. <br/>
 then enter this command -> `redis-cli` -> `ping`  -> PONG will be displayed.
 
+> to list out all the keys -> KEYS *
+
