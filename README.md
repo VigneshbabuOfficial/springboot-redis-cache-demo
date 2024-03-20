@@ -100,7 +100,7 @@ public class ProductDAO {
 	@Autowired
 	private ProductRepository repository;
 
-	@Cacheable(value = "Product", key = "#productId")
+	@Cacheable(value = "Product", key = "#productId", unless = "#result == null")
 	public Product findById(Long productId) {
 		log.info("findById, productId = " + productId);
 		return repository.findById(productId).orElse(null);
